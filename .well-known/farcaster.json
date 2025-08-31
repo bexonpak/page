@@ -1,0 +1,15 @@
+{
+  "frame": {
+    "name": "貝克森的小站站",
+    "version": "1",
+    "iconUrl": "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.ipns.dweb.link/icon.png",
+    "homeUrl": "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.ipns.dweb.link",
+    "imageUrl": "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.ipns.dweb.link/image.png",
+    "splashImageUrl": "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.ipns.dweb.link/splash.png",
+    "splashBackgroundColor": "#6200EA",
+    "webhookUrl": "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.ipns.dweb.link/api/webhook",
+    "subtitle": "Subtitle",
+    "description": " Description",
+    "primaryCategory": "social"
+  }
+}
