@@ -1,0 +1,13 @@
+{
+  "backgroundColor" : "#F4F1EC",
+  "borderColor" : "#E7E5DF",
+  "foregroundColor" : "#000000",
+  "foregroundSecondaryColor" : "#999999",
+  "highlightColor" : "#FF4500",
+  "linkColor" : "#778087",
+  "linkHoverColor" : "#4D5256",
+  "navigationActiveItemColor" : "#FCFCFA",
+  "navigationLinkColor" : "#333333",
+  "siteTitleColor" : "#333333",
+  "siteTitleHoverColor" : "#000000"
+}

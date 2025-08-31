@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=auto">
+    <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./assets/style.css?sha256=b6134367c0012e893b4ad7dd64b4ef93683275e4dfe93077071517fe63e96638">
+    <link rel="preload" href="./planet.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <link rel="preload" href="./rss.xml" as="fetch" type="application/rss+xml" crossorigin="anonymous">
+    <title>&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9; - mac</title>
+    <script>
+      let userAgentRegex = /Planet\/\S*/;
+      window.PLANET = {
+        visitedFromPlanetClient: !!navigator.userAgent.match(userAgentRegex),
+        assetsPrefix: './',
+      };
+
+      function breadcrumb(stubs) {
+        let container = document.createElement('div');
+        container.classList.add('breadcrumb')
+        let inner = document.createElement('div');
+        inner.classList.add('breadcrumb-inner');
+        container.appendChild(inner);
+        
+        let avatarHTML = `
+          <div class="breadcrumb-avatar">
+            <a href="./"><img src="./avatar.png" height="16" class="breadcrumb-avatar-image" border="0" /></a>
+          </div>
+        `;
+        inner.innerHTML = avatarHTML;
+        
+        if (!stubs || !stubs.length) {
+          return;
+        }
+
+        const getStubElem = (stub) => {
+          let elem;
+          if (stub.url) {
+            elem = document.createElement('a');
+            elem.href = stub.url;
+          } else {
+            elem = document.createElement('span');
+          }
+          elem.innerText = stub.text;
+          if (stub.classes) {
+            elem.classList.add(...stub.classes);
+          }
+          return elem;
+        };
+
+        const getSeparatorElem = () => {
+          let elem = document.createElement('span');
+          elem.innerText = '›';
+          elem.classList.add("chevron");
+          return elem;
+        }
+
+        inner.append(getStubElem(stubs[0]));
+        inner.append(getSeparatorElem());
+        for (let i = 1; i < stubs.length; i++)  {
+          inner.append(getStubElem(stubs[i]));
+          if (i < stubs.length - 1) {
+            inner.append(getSeparatorElem());
+          }
+        }
+
+        let main = document.querySelector('.main');
+        main.style.paddingTop = '10px';
+
+        let wrapper = document.querySelector('.wrapper');
+        wrapper.insertAdjacentElement('afterbegin', container);
+      }
+    </script>
+    
+    <link rel="icon" href="./avatar.png" sizes="144x144">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/png">
+    
+    
+<!-- Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+
+  <meta property="og:image" content="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/avatar.png" />
+  <meta property="og:image:width" content="72" />
+  <meta property="og:image:height" content="72" />
+  <meta property="og:image:alt" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+<meta name="twitter:title" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+<meta name="twitter:description" content="" />
+
+  <meta name="twitter:image" content="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/avatar.png" />
+
+<!-- End Open Graph Tags -->
+
+<!-- Pagination -->
+
+
+
+    
+    <style>
+  html, body, code {
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+</style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="main">
+      
+<div class="top">
+  
+  <a href="./"><img src="./avatar.png" width="72" height="72" class="avatar" border="0" /></a>
+  
+  <div class="site-info">
+    <div class="site-title">&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;</div>
+    
+  </div>
+</div>
+
+<div class="nav-container"><div class="nav">
+  <a href="./" class="nav-item">Home</a>
+  <a href="./tags.html" class="nav-current">Tags</a>
+  <a href="./archive.html" class="nav-item">Archive</a>
+  
+  <a href="./rss.xml" target="_blank"><img src="./assets/rss.svg" alt="RSS" class="social-icon" width="1em"></a>
+  
+  
+  
+  
+  
+  
+</div></div>
+
+
+<div class="tag-container">
+  <div class="tag-caption">
+    <a href="./tags.html">Tags</a>
+    <span class="chevron">›</span>
+  </div>
+  <div class="tag-title">mac</div>
+  <div class="tag-count">2 articles</div>
+</div>
+
+<div class="items">
+  
+  <div class="item">
+    
+    <div class="item-main">
+      <div class="item-title"><a href="./21770BDB-2D10-4EE5-8F21-ACA5E2B75F5C/">&#x4F7F;&#x7528; GPG &#x7C3D;&#x540D; git commits</a></div>
+      
+      <div class="item-info">
+        <div class="item-date">29. Apr 2025</div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="item">
+    
+    <!--<div class="item-hero-image"><a href="CB8DD277-C0E1-43C2-8D4E-FAC572EC4F98/"><img src="CB8DD277-C0E1-43C2-8D4E-FAC572EC4F98/https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/CB8DD277-C0E1-43C2-8D4E-FAC572EC4F98/github-add-ssh-key.png"></a></div>-->
+    
+    <div class="item-main">
+      <div class="item-title"><a href="./CB8DD277-C0E1-43C2-8D4E-FAC572EC4F98/">Mac &#x7C21;&#x55AE;&#x914D;&#x7F6E;&#x4E0D;&#x540C; host &#x7684; ssh-key</a></div>
+      
+      <div class="item-info">
+        <div class="item-date">27. Apr 2025</div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="pages-container">
+  
+  <div class="pages-info">&nbsp;</div>
+  
+</div>
+
+
+        <footer id="footer" style="display: none;"><div class="footer-inner">
+        </div></footer>
+      </div>
+    </div>
+    
+  </body>
+</html>

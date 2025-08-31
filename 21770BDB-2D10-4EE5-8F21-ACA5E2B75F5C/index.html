@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=auto">
+    <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../assets/style.css?sha256=b6134367c0012e893b4ad7dd64b4ef93683275e4dfe93077071517fe63e96638">
+    <link rel="preload" href="../planet.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <link rel="preload" href="../rss.xml" as="fetch" type="application/rss+xml" crossorigin="anonymous">
+    <title>&#x4F7F;&#x7528; GPG &#x7C3D;&#x540D; git commits</title>
+    <script>
+      let userAgentRegex = /Planet\/\S*/;
+      window.PLANET = {
+        visitedFromPlanetClient: !!navigator.userAgent.match(userAgentRegex),
+        assetsPrefix: '../',
+      };
+
+      function breadcrumb(stubs) {
+        let container = document.createElement('div');
+        container.classList.add('breadcrumb')
+        let inner = document.createElement('div');
+        inner.classList.add('breadcrumb-inner');
+        container.appendChild(inner);
+        
+        let avatarHTML = `
+          <div class="breadcrumb-avatar">
+            <a href="../"><img src="../avatar.png" height="16" class="breadcrumb-avatar-image" border="0" /></a>
+          </div>
+        `;
+        inner.innerHTML = avatarHTML;
+        
+        if (!stubs || !stubs.length) {
+          return;
+        }
+
+        const getStubElem = (stub) => {
+          let elem;
+          if (stub.url) {
+            elem = document.createElement('a');
+            elem.href = stub.url;
+          } else {
+            elem = document.createElement('span');
+          }
+          elem.innerText = stub.text;
+          if (stub.classes) {
+            elem.classList.add(...stub.classes);
+          }
+          return elem;
+        };
+
+        const getSeparatorElem = () => {
+          let elem = document.createElement('span');
+          elem.innerText = '›';
+          elem.classList.add("chevron");
+          return elem;
+        }
+
+        inner.append(getStubElem(stubs[0]));
+        inner.append(getSeparatorElem());
+        for (let i = 1; i < stubs.length; i++)  {
+          inner.append(getStubElem(stubs[i]));
+          if (i < stubs.length - 1) {
+            inner.append(getSeparatorElem());
+          }
+        }
+
+        let main = document.querySelector('.main');
+        main.style.paddingTop = '10px';
+
+        let wrapper = document.querySelector('.wrapper');
+        wrapper.insertAdjacentElement('afterbegin', container);
+      }
+    </script>
+    
+    <link rel="icon" href="../avatar.png" sizes="144x144">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/png">
+    
+    
+<!-- Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="&#x4F7F;&#x7528; GPG &#x7C3D;&#x540D; git commits" />
+<meta property="og:site_name" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+<meta property="og:description" content="&#x76EE;&#x7684; &#x56E0;&#x70BA; git &#x672C;&#x8EAB;&#x5141;&#x8A31;&#x4FEE;&#x6539; commit&#xFF0C;&#x672C;&#x6587;&#x7AE0;&#x6307;&#x5C0E;&#x5982;&#x4F55;&#x5728; macOS &#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E2D;&#x4F7F;&#x7528; GPG &#x5C0D; git &#x63D0;&#x4EA4;&#x9032;&#x884C;&#x6578;&#x5B57;&#x7C3D;&#x540D;&#x3002;&#x900F;&#x904E;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#xFF0C;&#x63D0;&#x4EA4;&#x5728; GitHub &#x6216;&#x5176;&#x5B83; git &#x7A0B;&#x5F0F;&#x78BC;&#x7BA1;&#x7406;&#x7CFB;&#x7D71;&#x4E0A;&#x5C07;&#x88AB;&#x6A19;&#x8A18;&#x70BA;&#x5DF2;&#x9A57;&#x8B49;&#xFF0C;&#x5F9E;&#x800C;&#x589E;&#x52A0;&#x63D0;&#x4EA4;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;&#x3002;&#x1F389; &#x914D;&#x7F6E;&#x6B65;&#x9A5F; &#x5B89;&#x88DD; GPG &#x900F;&#x904E; Homebrew &#x5B89;&#x88DD; GPG&#xFF1A; brew install gpg
+ &#x5B89;&#x88DD; GPG &#x5DE5;&#x5177;&#xFF0C;&#x4E4B;&#x5F8C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x4F86;&#x751F;&#x6210;&#x548C;&#x7BA1;&#x7406;&#x91D1;&#x9470;&#x5C0D;&#x3002; &#x6AA2;&#x67E5;&#x73FE;&#x6709;&#x7684; GPG &#x91D1;&#x9470; &#x5728;&#x751F;&#x6210;&#x65B0;&#x7684; GPG &#x91D1;&#x9470;&#x5C0D;&#x4E4B;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x6AA2;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x7D93;&#x5B58;&#x5728; GPG &#x91D1;&#x9470;&#x3002;&#x57F7;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A; gpg --list-secret-keys --..." />
+<meta property="article:published_time" content="2025-04-29T19:48:40+08:00" />
+
+  <meta property="og:image" content="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/avatar.png" />
+  <meta property="og:image:alt" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="&#x8C9D;&#x514B;&#x68EE;&#x7684;&#x5C0F;&#x7AD9;&#x7AD9;" />
+<meta name="twitter:title" content="&#x4F7F;&#x7528; GPG &#x7C3D;&#x540D; git commits" />
+<meta name="twitter:description" content="&#x76EE;&#x7684; &#x56E0;&#x70BA; git &#x672C;&#x8EAB;&#x5141;&#x8A31;&#x4FEE;&#x6539; commit&#xFF0C;&#x672C;&#x6587;&#x7AE0;&#x6307;&#x5C0E;&#x5982;&#x4F55;&#x5728; macOS &#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E2D;&#x4F7F;&#x7528; GPG &#x5C0D; git &#x63D0;&#x4EA4;&#x9032;&#x884C;&#x6578;&#x5B57;&#x7C3D;&#x540D;&#x3002;&#x900F;&#x904E;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#xFF0C;&#x63D0;&#x4EA4;&#x5728; GitHub &#x6216;&#x5176;&#x5B83; git &#x7A0B;&#x5F0F;&#x78BC;&#x7BA1;&#x7406;&#x7CFB;&#x7D71;&#x4E0A;&#x5C07;&#x88AB;&#x6A19;&#x8A18;&#x70BA;&#x5DF2;&#x9A57;&#x8B49;&#xFF0C;&#x5F9E;&#x800C;&#x589E;&#x52A0;&#x63D0;&#x4EA4;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;&#x3002;&#x1F389; &#x914D;&#x7F6E;&#x6B65;&#x9A5F; &#x5B89;&#x88DD; GPG &#x900F;&#x904E; Homebrew &#x5B89;&#x88DD; GPG&#xFF1A; brew install gpg
+ &#x5B89;&#x88DD; GPG &#x5DE5;&#x5177;&#xFF0C;&#x4E4B;&#x5F8C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x4F86;&#x751F;&#x6210;&#x548C;&#x7BA1;&#x7406;&#x91D1;&#x9470;&#x5C0D;&#x3002; &#x6AA2;&#x67E5;&#x73FE;&#x6709;&#x7684; GPG &#x91D1;&#x9470; &#x5728;&#x751F;&#x6210;&#x65B0;&#x7684; GPG &#x91D1;&#x9470;&#x5C0D;&#x4E4B;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x6AA2;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x7D93;&#x5B58;&#x5728; GPG &#x91D1;&#x9470;&#x3002;&#x57F7;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A; gpg --list-secret-keys --..." />
+
+  <meta name="twitter:image" content="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/avatar.png" />
+
+<!-- End Open Graph Tags -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!window.PLANET.visitedFromPlanetClient) {
+      
+
+      if(document.getElementById('audio-container')){
+        document.querySelector('.audio-container').style.display = 'block';
+      }
+      if(document.getElementById('footer')){
+        document.querySelector('#footer').style.display = 'block';
+      }
+      console.log("Current article_type: 0")
+      
+      breadcrumb([
+        { text: "貝克森的小站站", url: '../' },
+      ]);
+      
+    } else {
+
+    }
+    const todos = document.querySelectorAll('li:has(input[type="checkbox"])');
+    let i = 1;
+    todos.forEach(item => {
+      item.id = "todo-item-" + i;
+      i++;
+    });
+  });
+</script>
+
+    
+    <style>
+  html, body, code {
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+</style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="main">
+      
+
+<h1>&#x4F7F;&#x7528; GPG &#x7C3D;&#x540D; git commits</h1>
+<div class="date">Apr 29, 2025 at 19:48:40</div>
+<div class="content">
+  
+  
+  <h2>目的</h2>
+<p>因為 git 本身允許修改 commit，本文章指導如何在 macOS 作業系統中使用 GPG 對 git 提交進行數字簽名。透過這種方式，提交在 GitHub 或其它 git 程式碼管理系統上將被標記為已驗證，從而增加提交的可信度。🎉</p>
+<h2>配置步驟</h2>
+<h3>安裝 GPG</h3>
+<p>透過 Homebrew 安裝 GPG：</p>
+<pre><code class="language-ssh">brew install gpg
+</code></pre>
+<p>安裝 GPG 工具，之後可以使用它來生成和管理金鑰對。</p>
+<p>檢查現有的 GPG 金鑰</p>
+<p>在生成新的 GPG 金鑰對之前，首先檢查是否已經存在 GPG 金鑰。執行以下命令：</p>
+<pre><code class="language-ssh">gpg --list-secret-keys --keyid-format LONG
+如果命令沒有返回任何金鑰，說明你還沒有配置 GPG 金鑰。
+% gpg --list-secret-keys --keyid-format LONG
+gpg: directory '/Users/UserName/.gnupg' created
+gpg: /Users/UserName/.gnupg/trustdb.gpg: trustdb created
+</code></pre>
+<p>如果返回了金鑰資訊，則可以跳過生成 GPG 金鑰對的步驟。</p>
+<pre><code class="language-ssh">% gpg --list-secret-keys --keyid-format LONG
+[keyboxd]
+---------
+sec   ed25519/E7175B0CAF8C4FE0 2024-09-16 [SC]
+      *****************
+uid                 [ultimate] UserName &lt;email@exmple.com&gt;
+ssb   cv25519/88CAD4AB29BCB4B5 2024-09-16 [E]
+</code></pre>
+<p>後面也可以透過這條命令檢視已有的金鑰</p>
+<h3>生成 GPG 金鑰對</h3>
+<p>生成新金鑰對：</p>
+<pre><code class="language-ssh">gpg --full-generate-key --expert
+# 使用 --expert 選項可以支援 ECC 
+# 加密演算法。如果選擇 RSA 演算法，則無需使用 --expert 選項
+</code></pre>
+<ul>
+<li>選擇金鑰型別：選擇 (9) ECC (sign and encrypt) <em>default</em></li>
+<li>選擇演算法：選擇 (1) Curve 25519</li>
+<li>設定金鑰過期時間：0 為永不過期</li>
+<li>確認資訊 Key is valid for? (0)  Is this correct? (y/N)</li>
+<li>設定使用者 ID：確保郵箱地址與commit郵箱一致</li>
+<li>設定密碼</li>
+</ul>
+<h3>匯出公鑰</h3>
+<p>獲取金鑰列表：</p>
+<pre><code class="language-ssh">gpg --list-secret-keys --keyid-format LONG
+</code></pre>
+<p>示例輸出：</p>
+<pre><code class="language-ssh">% gpg --list-secret-keys --keyid-format LONG
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+[keyboxd]
+---------
+sec   ed25519/E7175B0CAF8C4FE0 2024-09-16 [SC]
+      *****************
+uid                 [ultimate] UserName &lt;email@exmple.com&gt;
+ssb   cv25519/88CAD4AB29BCB4B5 2024-09-16 [E]
+</code></pre>
+<p>記下 sec ed25519/ 後面的 GPG Key ID，例如 E7175B0CAF8C4FE0</p>
+<p>匯出公鑰：</p>
+<pre><code class="language-ssh">gpg --armor --export E7175B0CAF8C4FE0
+</code></pre>
+<p>將匯出的公鑰複製並貼上到 GitHub 的 GPG 金鑰新增頁面上。</p>
+<pre><code class="language-ssh">-----BEGIN PGP PUBLIC KEY BLOCK-----
+PUBLIC KEY
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre>
+<h3>配置 Git</h3>
+<p>設定 gpg-agent 環境變數：</p>
+<pre><code class="language-ssh">echo 'export GPG_TTY=$(tty)' &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre>
+<p>這裡只寫了Oh my zsh的，其它工具自行改一下</p>
+<p>配置 Git 使用 GPG 簽名：</p>
+<p>當前目錄</p>
+<pre><code class="language-ssh">git config user.signingkey E7175B0CAF8C4FE0
+git config commit.gpgsign true
+</code></pre>
+<p>全域性</p>
+<pre><code class="language-ssh">git config --global user.signingkey E7175B0CAF8C4FE0
+git config --global commit.gpgsign true
+</code></pre>
+<p>注意替換為實際的 GPG Key ID。</p>
+<p>對於不需要 GPG 簽名的 Git 倉庫，進入倉庫目錄並執行：</p>
+<pre><code class="language-ssh">git config commit.gpgsign false
+</code></pre>
+<p>祝程式設計愉悅！</p>
+
+</div>
+
+<div class="tags-container">
+<span>Tags:</span>
+<div class="tags"><a href="../mac.html" class="tag-item">mac</a><a href="../ssh.html" class="tag-item">ssh</a></div>
+</div>
+
+
+
+        <footer id="footer" style="display: none;"><div class="footer-inner">
+        </div></footer>
+      </div>
+    </div>
+    
+  </body>
+</html>
