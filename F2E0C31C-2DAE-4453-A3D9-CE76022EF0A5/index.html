@@ -131,7 +131,18 @@
   html, body, code {
     font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+  
+  summary {
+    cursor: pointer;
+  }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/languages/swift.min.js"></script>
+
+<script>hljs.highlightAll();</script>
   </head>
   <body>
     
@@ -144,7 +155,8 @@
 <div class="content">
   
   
-  <p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p>
+  <img width="128" alt="xcode-s-128x128_2x" src="xcode-s-128x128_2x.png">
+<p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p>
 <p>而 GitHub 承擔了絕大部分的 swift package 的分發。</p>
 <p>但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。</p>
 <p>Xcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！</p>

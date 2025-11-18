@@ -1,13 +1,15 @@
 {
   "articleType" : 0,
   "attachments" : [
-    "Bildschirmfoto 2025-09-18 um 18.10.29.png"
+    "Bildschirmfoto 2025-09-18 um 18.10.29.png",
+    "xcode-s-128x128_2x.png"
   ],
   "cids" : {
-    "Bildschirmfoto 2025-09-18 um 18.10.29.png" : "QmPEsmjT8JFqoB6tus2FNyBitqVndtE7KLdpegakTnrNz7"
+    "Bildschirmfoto 2025-09-18 um 18.10.29.png" : "QmPEsmjT8JFqoB6tus2FNyBitqVndtE7KLdpegakTnrNz7",
+    "xcode-s-128x128_2x.png" : "QmWG1ESSwBYAH1z1RF2RkyWDAhAeFFeJy3cyoEWNCHBuYK"
   },
-  "content" : "因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。\n\n而 GitHub 承擔了絕大部分的 swift package 的分發。\n\n但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。\n\nXcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！\n\n1. 使用終端進入專案 root 目錄\n\n2. 複製並在終端執行終端代理命令（這裡以 clash 為演示）\n   <img width=\"212\" alt=\"Bildschirmfoto 2025-09-18 um 18.10.29\" src=\"Bildschirmfoto 2025-09-18 um 18.10.29.png\">\n\n   ``` shell\n   export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897\n   ```\n\n3. 再執行 xcodebuild 的 fetch swift package 的命令就好啦~\n\n   ``` shell\n   xcodebuild -resolvePackageDependencies -scmProvider system\n   ```\n\n4. 當你看到 `resolved source packages` 就大功告成！\n\n祝程式設計愉悅！",
-  "contentRendered" : "<p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p>\n<p>而 GitHub 承擔了絕大部分的 swift package 的分發。</p>\n<p>但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。</p>\n<p>Xcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！</p>\n<ol>\n<li>\n<p>使用終端進入專案 root 目錄</p>\n</li>\n<li>\n<p>複製並在終端執行終端代理命令（這裡以 clash 為演示）<br />\n<img width=\"212\" alt=\"Bildschirmfoto 2025-09-18 um 18.10.29\" src=\"Bildschirmfoto 2025-09-18 um 18.10.29.png\"></p>\n<pre><code class=\"language-shell\">export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897\n</code></pre>\n</li>\n<li>\n<p>再執行 xcodebuild 的 fetch swift package 的命令就好啦~</p>\n<pre><code class=\"language-shell\">xcodebuild -resolvePackageDependencies -scmProvider system\n</code></pre>\n</li>\n<li>\n<p>當你看到 <code>resolved source packages</code> 就大功告成！</p>\n</li>\n</ol>\n<p>祝程式設計愉悅！</p>\n",
+  "content" : "<img width=\"128\" alt=\"xcode-s-128x128_2x\" src=\"xcode-s-128x128_2x.png\">\n\n因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。\n\n而 GitHub 承擔了絕大部分的 swift package 的分發。\n\n但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。\n\nXcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！\n\n1. 使用終端進入專案 root 目錄\n\n2. 複製並在終端執行終端代理命令（這裡以 clash 為演示）\n   <img width=\"212\" alt=\"Bildschirmfoto 2025-09-18 um 18.10.29\" src=\"Bildschirmfoto 2025-09-18 um 18.10.29.png\">\n\n   ``` shell\n   export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897\n   ```\n\n3. 再執行 xcodebuild 的 fetch swift package 的命令就好啦~\n\n   ``` shell\n   xcodebuild -resolvePackageDependencies -scmProvider system\n   ```\n\n4. 當你看到 `resolved source packages` 就大功告成！\n\n祝程式設計愉悅！",
+  "contentRendered" : "<img width=\"128\" alt=\"xcode-s-128x128_2x\" src=\"xcode-s-128x128_2x.png\">\n<p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p>\n<p>而 GitHub 承擔了絕大部分的 swift package 的分發。</p>\n<p>但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。</p>\n<p>Xcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！</p>\n<ol>\n<li>\n<p>使用終端進入專案 root 目錄</p>\n</li>\n<li>\n<p>複製並在終端執行終端代理命令（這裡以 clash 為演示）<br />\n<img width=\"212\" alt=\"Bildschirmfoto 2025-09-18 um 18.10.29\" src=\"Bildschirmfoto 2025-09-18 um 18.10.29.png\"></p>\n<pre><code class=\"language-shell\">export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897\n</code></pre>\n</li>\n<li>\n<p>再執行 xcodebuild 的 fetch swift package 的命令就好啦~</p>\n<pre><code class=\"language-shell\">xcodebuild -resolvePackageDependencies -scmProvider system\n</code></pre>\n</li>\n<li>\n<p>當你看到 <code>resolved source packages</code> 就大功告成！</p>\n</li>\n</ol>\n<p>祝程式設計愉悅！</p>\n",
   "created" : 779882405.052695,
   "externalLink" : "",
   "hasAudio" : false,

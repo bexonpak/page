@@ -1,0 +1,35 @@
+{
+  "articleType" : 0,
+  "attachments" : [
+    "Bildschirmfoto 2025-11-18 um 18.11.27.png",
+    "Bildschirmfoto 2025-11-18 um 18.11.54.png",
+    "Bildschirmfoto 2025-11-18 um 18.16.16.png",
+    "Bildschirmfoto 2025-11-18 um 18.20.13.png",
+    "89a7e786a3e52c57fd2fd0a38c644afe.png"
+  ],
+  "cids" : {
+    "89a7e786a3e52c57fd2fd0a38c644afe.png" : "QmZrudP3MUZmNgsnFC3GF1StmQ8vGeSmvnoXmEHX63X8kT",
+    "Bildschirmfoto 2025-11-18 um 18.11.27.png" : "QmUWLPPdaZxqeAqxuNNLfp2yVfMyRUw9ApuaQmccDP3GK1",
+    "Bildschirmfoto 2025-11-18 um 18.11.54.png" : "Qmd924pw8aZeNDXmd4t1rHEoYYq1whSwgLF9MSfeSFZ8gX",
+    "Bildschirmfoto 2025-11-18 um 18.16.16.png" : "QmYyeQQqGyirpTVrBbPxFAuHiDXQN6WUPkdJzmrvb9KsAC",
+    "Bildschirmfoto 2025-11-18 um 18.20.13.png" : "QmVeQ6w8F3dNiGuL7HYioCNTxpgNszc3i1ABUUMQE24zpK"
+  },
+  "content" : "即使想在 Steam 上玩的遊戲有 Windows 版但沒有 Mac 版的情況並不少見。因此，我試著利用 Sikarugir 在 Mac 上執行 Windows 版的遊戲。\n\n※ Mac 版 Steam 已安裝且 Steam 帳號已建立。\n\n先安裝：\n\n[Sikarugir-App/Sikarugir](https://github.com/Sikarugir-App/Sikarugir)\n\n自己的情況下，我透過下述方法成功啟動了 Luma Island\n\n在「應用程式資料夾」中雙擊「Sikarugir Creator.app」，\n\n點選「+」下載「WS12WineCX24.0.7_6」引擎\n\n<img width=\"516\" alt=\"Bildschirmfoto 2025-11-18 um 18.11.27\" src=\"Bildschirmfoto 2025-11-18 um 18.11.27.png\">\n\n點選「Create New Blank Wrapper」\n\n<img width=\"410\" alt=\"Bildschirmfoto 2025-11-18 um 18.11.54\" src=\"Bildschirmfoto 2025-11-18 um 18.11.54.png\">\n\n安裝成功後在 User 的 Applications 檔案夾找到 app 開啟\n\n```/Users/{user_name}/Applications/Sikarugir/SteamWindows.app```\n\n點選 Winetricks ，勾選\n\n<img width=\"915\" alt=\"Bildschirmfoto 2025-11-18 um 18.20.13\" src=\"Bildschirmfoto 2025-11-18 um 18.20.13.png\">\n\n* apps\n  * steam\n* dlls\n  * d3dx11_42\n  * d3dx11_43\n* fonts\n  * fakechinese\n\n點選 Run，等待安裝完成\n\n點選 Windows app 後面的 Broswe 找到 Steam.exe\n\n<img width=\"797\" alt=\"Bildschirmfoto 2025-11-18 um 18.16.16\" src=\"Bildschirmfoto 2025-11-18 um 18.16.16.png\">\n\n在路徑後面新增\n\n```\n-udpforce -allosarches -cef-force-32bit\n```\n\n最後大概是這個樣子\n\n```\n\"C:\\Program Files (x86)\\Steam\\Steam.exe\" -udpforce -allosarches -cef-force-32bit\n```\n\n點選 「Test Run」啟動。\n\n---\n\n啟動測試了一下 Luma Island \n\n<img width=\"1392\" alt=\"89a7e786a3e52c57fd2fd0a38c644afe\" src=\"89a7e786a3e52c57fd2fd0a38c644afe.png\">",
+  "contentRendered" : "<p>即使想在 Steam 上玩的遊戲有 Windows 版但沒有 Mac 版的情況並不少見。因此，我試著利用 Sikarugir 在 Mac 上執行 Windows 版的遊戲。</p>\n<p>※ Mac 版 Steam 已安裝且 Steam 帳號已建立。</p>\n<p>先安裝：</p>\n<p><a href=\"https://github.com/Sikarugir-App/Sikarugir\">Sikarugir-App/Sikarugir</a></p>\n<p>自己的情況下，我透過下述方法成功啟動了 Luma Island</p>\n<p>在「應用程式資料夾」中雙擊「Sikarugir Creator.app」，</p>\n<p>點選「+」下載「WS12WineCX24.0.7_6」引擎</p>\n<img width=\"516\" alt=\"Bildschirmfoto 2025-11-18 um 18.11.27\" src=\"Bildschirmfoto 2025-11-18 um 18.11.27.png\">\n<p>點選「Create New Blank Wrapper」</p>\n<img width=\"410\" alt=\"Bildschirmfoto 2025-11-18 um 18.11.54\" src=\"Bildschirmfoto 2025-11-18 um 18.11.54.png\">\n<p>安裝成功後在 User 的 Applications 檔案夾找到 app 開啟</p>\n<p><code>/Users/{user_name}/Applications/Sikarugir/SteamWindows.app</code></p>\n<p>點選 Winetricks ，勾選</p>\n<img width=\"915\" alt=\"Bildschirmfoto 2025-11-18 um 18.20.13\" src=\"Bildschirmfoto 2025-11-18 um 18.20.13.png\">\n<ul>\n<li>apps\n<ul>\n<li>steam</li>\n</ul>\n</li>\n<li>dlls\n<ul>\n<li>d3dx11_42</li>\n<li>d3dx11_43</li>\n</ul>\n</li>\n<li>fonts\n<ul>\n<li>fakechinese</li>\n</ul>\n</li>\n</ul>\n<p>點選 Run，等待安裝完成</p>\n<p>點選 Windows app 後面的 Broswe 找到 Steam.exe</p>\n<img width=\"797\" alt=\"Bildschirmfoto 2025-11-18 um 18.16.16\" src=\"Bildschirmfoto 2025-11-18 um 18.16.16.png\">\n<p>在路徑後面新增</p>\n<pre><code>-udpforce -allosarches -cef-force-32bit\n</code></pre>\n<p>最後大概是這個樣子</p>\n<pre><code>&quot;C:\\Program Files (x86)\\Steam\\Steam.exe&quot; -udpforce -allosarches -cef-force-32bit\n</code></pre>\n<p>點選 「Test Run」啟動。</p>\n<hr />\n<p>啟動測試了一下 Luma Island</p>\n<img width=\"1392\" alt=\"89a7e786a3e52c57fd2fd0a38c644afe\" src=\"89a7e786a3e52c57fd2fd0a38c644afe.png\">\n",
+  "created" : 785152802.470167,
+  "externalLink" : "",
+  "hasAudio" : false,
+  "hasVideo" : false,
+  "heroImage" : "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto%202025-11-18%20um%2018.11.27.png",
+  "heroImageFilename" : "Bildschirmfoto 2025-11-18 um 18.11.27.png",
+  "heroImageHeight" : 600,
+  "heroImageURL" : "https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto%202025-11-18%20um%2018.11.27.png",
+  "heroImageWidth" : 516,
+  "id" : "2D70F68C-8A66-4482-A45C-39B58F7C224C",
+  "link" : "/2D70F68C-8A66-4482-A45C-39B58F7C224C/",
+  "slug" : "",
+  "tags" : {
+
+  },
+  "title" : "Mac 中使用 Windows 版 Steam 的方法 （通过 Sikarugir）"
+}

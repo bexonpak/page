@@ -18,6 +18,501 @@
     
     
     <item>
+        <title>Mac &#x4E2D;&#x4F7F;&#x7528; Windows &#x7248; Steam &#x7684;&#x65B9;&#x6CD5; &#xFF08;&#x901A;&#x8FC7; Sikarugir&#xFF09;</title>
+        <link>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/</link>
+        <guid>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/</guid>
+        <pubDate>Tue, 18 Nov 2025 18:00:02 +0800</pubDate>
+        
+        <itunes:image href="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto%202025-11-18%20um%2018.11.27.png" />    
+        
+        
+        <description><![CDATA[
+            <p>即使想在 Steam 上玩的遊戲有 Windows 版但沒有 Mac 版的情況並不少見。因此，我試著利用 Sikarugir 在 Mac 上執行 Windows 版的遊戲。</p> 
+<p>※ Mac 版 Steam 已安裝且 Steam 帳號已建立。</p> 
+<p>先安裝：</p> 
+<p><a href="https://github.com/Sikarugir-App/Sikarugir">Sikarugir-App/Sikarugir</a></p> 
+<p>自己的情況下，我透過下述方法成功啟動了 Luma Island</p> 
+<p>在「應用程式資料夾」中雙擊「Sikarugir Creator.app」，</p> 
+<p>點選「+」下載「WS12WineCX24.0.7_6」引擎</p> 
+<img width="516" alt="Bildschirmfoto 2025-11-18 um 18.11.27" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto 2025-11-18 um 18.11.27.png" /> 
+<p>點選「Create New Blank Wrapper」</p> 
+<img width="410" alt="Bildschirmfoto 2025-11-18 um 18.11.54" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto 2025-11-18 um 18.11.54.png" /> 
+<p>安裝成功後在 User 的 Applications 檔案夾找到 app 開啟</p> 
+<p><code>/Users/{user_name}/Applications/Sikarugir/SteamWindows.app</code></p> 
+<p>點選 Winetricks ，勾選</p> 
+<img width="915" alt="Bildschirmfoto 2025-11-18 um 18.20.13" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto 2025-11-18 um 18.20.13.png" /> 
+<ul> 
+ <li>apps 
+  <ul> 
+   <li>steam</li> 
+  </ul> </li> 
+ <li>dlls 
+  <ul> 
+   <li>d3dx11_42</li> 
+   <li>d3dx11_43</li> 
+  </ul> </li> 
+ <li>fonts 
+  <ul> 
+   <li>fakechinese</li> 
+  </ul> </li> 
+</ul> 
+<p>點選 Run，等待安裝完成</p> 
+<p>點選 Windows app 後面的 Broswe 找到 Steam.exe</p> 
+<img width="797" alt="Bildschirmfoto 2025-11-18 um 18.16.16" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/Bildschirmfoto 2025-11-18 um 18.16.16.png" /> 
+<p>在路徑後面新增</p> 
+<pre><code>-udpforce -allosarches -cef-force-32bit
+</code></pre> 
+<p>最後大概是這個樣子</p> 
+<pre><code>"C:\Program Files (x86)\Steam\Steam.exe" -udpforce -allosarches -cef-force-32bit
+</code></pre> 
+<p>點選 「Test Run」啟動。</p> 
+<hr /> 
+<p>啟動測試了一下 Luma Island</p> 
+<img width="1392" alt="89a7e786a3e52c57fd2fd0a38c644afe" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/2D70F68C-8A66-4482-A45C-39B58F7C224C/89a7e786a3e52c57fd2fd0a38c644afe.png" />
+        ]]></description>
+    </item>
+    
+    <item>
+        <title>iOS app &#x7684; Clean Architecture + MVVM &#x67B6;&#x69CB;&#x7684;&#x4E00;&#x500B; Demo</title>
+        <link>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/52ADB465-3542-4102-AE8C-0BBF437F7A5F/</link>
+        <guid>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/52ADB465-3542-4102-AE8C-0BBF437F7A5F/</guid>
+        <pubDate>Mon, 13 Oct 2025 16:00:30 +0800</pubDate>
+        
+        <itunes:image href="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/52ADB465-3542-4102-AE8C-0BBF437F7A5F/user_list_app_9_21.png" />    
+        
+        
+        <description><![CDATA[
+            <h4>螢幕截圖</h4> 
+<img width="1707" alt="user_list_app_9_21" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/52ADB465-3542-4102-AE8C-0BBF437F7A5F/user_list_app_9_21.png" /> 
+<h4>文件架構</h4> 
+<pre><code>.
+├── Feature/
+│   ├── Data/ 
+│   │   ├── Network/
+│   │   │   ├── CloudUserApi.swift
+│   │   │   ├── CloudUserRequest.swift
+│   │   │   └── CloudUserResponse.swift
+│   │   └── Service/
+│   │       └── CloudApiService.swift
+│   ├── Domain/ 
+│   │   ├── Entities/
+│   │   │   └── UserEntity.swift
+│   │   └── UseCases/
+│   │       ├── CloudUserUseCase.swift
+│   │       └── CloudSyncUseCase.swift
+│   ├── Presentation/ 
+│   │   └── CloudUserViewModel.swift
+│   └── UI/
+│       ├── Components/
+│       │   ├── UserRowView.swift
+│       │   ├── UserRowView.swift
+│       │   └── UserRowView.swift
+│       └── UserListView.swift
+└── UserApp.swift
+</code></pre> 
+<hr /> 
+<h4>App Entry Point</h4> 
+<details> 
+ <summary>UserApp.swift</summary> 
+ <pre><code>@main
+struct UserApp: App {
+  var body: some Scene {
+    WindowGroup {
+      UserListView()
+    }
+  }
+}
+
+#Preview {
+  UserListView()
+}
+</code></pre> 
+</details> 
+<hr /> 
+<h4>UI Layer</h4> 
+<details> 
+ <summary>Feature/UI/UserListView.swift</summary> 
+ <pre><code>import SwiftUI
+
+struct UserListView: View {
+  @StateObject private var viewModel = CloudUserViewModel()
+  
+  var body: some View {
+    NavigationView {
+      ZStack {
+        if viewModel.isLoading {
+          ProgressView("Loading users...")
+        } else if let error = viewModel.errorMessage {
+          VStack(spacing: 16) {
+            Image(systemName: "exclamationmark.triangle")
+              .font(.system(size: 48))
+              .foregroundColor(.orange)
+            Text("Error")
+              .font(.headline)
+            Text(error)
+              .font(.subheadline)
+              .foregroundColor(.secondary)
+              .multilineTextAlignment(.center)
+              .padding(.horizontal)
+            Button("Retry") {
+              Task {
+                await viewModel.loadUsers()
+              }
+            }
+            .buttonStyle(.borderedProminent)
+          }
+        } else {
+          List(viewModel.filteredUsers) { user in
+            NavigationLink(destination: UserDetailView(user: user)) {
+              UserRowView(user: user)
+            }
+          }
+          .searchable(text: $viewModel.searchText, prompt: "Search users")
+        }
+      }
+      .navigationTitle("Users")
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          Button {
+            Task {
+              await viewModel.syncUsers()
+            }
+          } label: {
+            Image(systemName: "arrow.clockwise")
+          }
+          .disabled(viewModel.isLoading)
+        }
+      }
+    }
+    .task {
+      await viewModel.loadUsers()
+    }
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/UI/Components/UserRowView.swift</summary> 
+ <pre><code>import SwiftUI
+
+struct UserRowView: View {
+  let user: UserEntity
+  
+  var body: some View {
+    VStack(alignment: .leading, spacing: 8) {
+      Text(user.name)
+        .font(.headline)
+      
+      HStack {
+        Image(systemName: "person.circle")
+          .foregroundColor(.blue)
+        Text(user.username)
+          .font(.subheadline)
+          .foregroundColor(.secondary)
+      }
+      
+      HStack {
+        Image(systemName: "building.2")
+          .foregroundColor(.purple)
+        Text(user.company)
+          .font(.subheadline)
+          .foregroundColor(.secondary)
+      }
+    }
+    .padding(.vertical, 4)
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/UI/Components/UserDetailView.swift</summary> 
+ <pre><code>import SwiftUI
+
+struct UserDetailView: View {
+  let user: UserEntity
+  
+  var body: some View {
+    List {
+      Section("Personal Information") {
+        DetailRow(icon: "person.fill", title: "Name", value: user.name)
+        DetailRow(icon: "at", title: "Username", value: user.username)
+        DetailRow(icon: "envelope.fill", title: "Email", value: user.email)
+        DetailRow(icon: "phone.fill", title: "Phone", value: user.phone)
+        DetailRow(icon: "globe", title: "Website", value: user.website)
+      }
+      
+      Section("Location") {
+        DetailRow(icon: "location.fill", title: "City", value: user.city)
+      }
+      
+      Section("Company") {
+        DetailRow(icon: "building.2.fill", title: "Company", value: user.company)
+        VStack(alignment: .leading, spacing: 4) {
+          HStack {
+            Image(systemName: "quote.opening")
+              .foregroundColor(.blue)
+            Text("Catch Phrase")
+              .font(.subheadline)
+              .foregroundColor(.secondary)
+          }
+          Text(user.catchPhrase)
+            .font(.body)
+            .italic()
+            .padding(.leading, 24)
+        }
+      }
+    }
+    .navigationTitle(user.name)
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/UI/Components/DetailRow.swift</summary> 
+ <pre><code>import SwiftUI
+
+struct DetailRow: View {
+  let icon: String
+  let title: String
+  let value: String
+  
+  var body: some View {
+    HStack {
+      Image(systemName: icon)
+        .foregroundColor(.blue)
+        .frame(width: 24)
+      VStack(alignment: .leading, spacing: 2) {
+        Text(title)
+          .font(.caption)
+          .foregroundColor(.secondary)
+        Text(value)
+          .font(.body)
+      }
+    }
+  }
+}
+</code></pre> 
+</details> 
+<hr /> 
+<h4>Presentation Layer</h4> 
+<details> 
+ <summary>Feature/Presentation/CloudUserViewModel.swift</summary> 
+ <pre><code>import Combine
+import Foundation
+
+class CloudUserViewModel: ObservableObject {
+  @Published var users: [UserEntity] = []
+  @Published var isLoading = false
+  @Published var errorMessage: String?
+  @Published var searchText = ""
+  
+  private let getUsersUseCase = CloudUserUseCaseImpl()
+  private let syncUseCase = CloudSyncUseCaseImpl()
+  
+  var filteredUsers: [UserEntity] {
+    if searchText.isEmpty {
+      return users
+    }
+    return users.filter { user in
+      user.name.localizedCaseInsensitiveContains(searchText) ||
+      user.username.localizedCaseInsensitiveContains(searchText) ||
+      user.email.localizedCaseInsensitiveContains(searchText) ||
+      user.company.localizedCaseInsensitiveContains(searchText)
+    }
+  }
+  
+  func loadUsers() async {
+    isLoading = true
+    errorMessage = nil
+    
+    do {
+      users = try await getUsersUseCase.execute()
+    } catch {
+      errorMessage = error.localizedDescription
+    }
+    
+    isLoading = false
+  }
+  
+  func syncUsers() async {
+    isLoading = true
+    errorMessage = nil
+    
+    do {
+      try await syncUseCase.execute()
+      users = try await getUsersUseCase.execute()
+    } catch {
+      errorMessage = error.localizedDescription
+    }
+    
+    isLoading = false
+  }
+}
+</code></pre> 
+</details> 
+<hr /> 
+<h4>Domain Layer</h4> 
+<details> 
+ <summary>Feature/Domain/Entities/UserEntity.swift</summary> 
+ <pre><code>struct UserEntity: Identifiable {
+  let id: Int
+  let name: String
+  let username: String
+  let email: String
+  let city: String
+  let company: String
+  let phone: String
+  let website: String
+  let catchPhrase: String
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/Domain/UseCases/CloudUserUseCase.swift</summary> 
+ <pre><code>protocol CloudUserUseCase {
+  func execute() async throws -&gt; [UserEntity]
+}
+
+class CloudUserUseCaseImpl: CloudUserUseCase {
+  private let service: CloudApiService
+  
+  init(service: CloudApiService = CloudApiServiceImpl()) {
+    self.service = service
+  }
+  
+  func execute() async throws -&gt; [UserEntity] {
+    let responses = try await service.getUsers()
+    return responses.map { response in
+      UserEntity(
+        id: response.id,
+        name: response.name,
+        username: response.username,
+        email: response.email,
+        city: response.address.city,
+        company: response.company.name,
+        phone: response.phone,
+        website: response.website,
+        catchPhrase: response.company.catchPhrase
+      )
+    }
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/Domain/UseCases/CloudSyncUseCase.swift</summary> 
+ <pre><code>protocol CloudSyncUseCase {
+  func execute() async throws
+}
+
+class CloudSyncUseCaseImpl: CloudSyncUseCase {
+  private let service: CloudApiService
+  
+  init(service: CloudApiService = CloudApiServiceImpl()) {
+    self.service = service
+  }
+  
+  func execute() async throws {
+    try await service.syncUsers()
+  }
+}
+</code></pre> 
+</details> 
+<hr /> 
+<h4>Data Layer</h4> 
+<details> 
+ <summary>Feature/Data/Network/CloudUserRequest.swift</summary> 
+ <pre><code>struct CloudUserRequest: Codable {
+  var endpoint: String = "/users"
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/Data/Network/CloudUserResponse.swift</summary> 
+ <pre><code>struct CloudUserResponse: Codable {
+  let id: Int
+  let name: String
+  let username: String
+  let email: String
+  let address: Address
+  let phone: String
+  let website: String
+  let company: Company
+  
+  struct Address: Codable {
+    let street: String
+    let suite: String
+    let city: String
+    let zipcode: String
+    let geo: Geo
+    
+    struct Geo: Codable {
+      let lat: String
+      let lng: String
+    }
+  }
+  
+  struct Company: Codable {
+    let name: String
+    let catchPhrase: String
+    let bs: String
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/Data/Network/CloudUserApi.swift</summary> 
+ <pre><code>import Foundation
+
+protocol CloudUserApi {
+  func fetchUsers() async throws -&gt; [CloudUserResponse]
+}
+
+class CloudUserApiImpl: CloudUserApi {
+  private let baseURL = "https://jsonplaceholder.typicode.com"
+  
+  func fetchUsers() async throws -&gt; [CloudUserResponse] {
+    guard let url = URL(string: "\(baseURL)/users") else {
+      throw URLError(.badURL)
+    }
+    
+    let (data, _) = try await URLSession.shared.data(from: url)
+    let users = try JSONDecoder().decode([CloudUserResponse].self, from: data)
+    return users
+  }
+}
+</code></pre> 
+</details> 
+<details> 
+ <summary>Feature/Data/Service/CloudApiService.swift</summary> 
+ <pre><code>protocol CloudApiService {
+  func getUsers() async throws -&gt; [CloudUserResponse]
+  func syncUsers() async throws
+}
+
+class CloudApiServiceImpl: CloudApiService {
+  private let api: CloudUserApi
+  
+  init(api: CloudUserApi = CloudUserApiImpl()) {
+    self.api = api
+  }
+  
+  func getUsers() async throws -&gt; [CloudUserResponse] {
+    return try await api.fetchUsers()
+  }
+  
+  func syncUsers() async throws {
+    _ = try await api.fetchUsers()
+  }
+}
+
+</code></pre> 
+</details>
+        ]]></description>
+    </item>
+    
+    <item>
         <title>Xcode Swift Package Manager &#x7121;&#x6CD5;&#x4E0B;&#x8F09; GitHub &#x5305;&#x554F;&#x984C;</title>
         <link>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/F2E0C31C-2DAE-4453-A3D9-CE76022EF0A5/</link>
         <guid>https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/F2E0C31C-2DAE-4453-A3D9-CE76022EF0A5/</guid>
@@ -27,7 +522,8 @@
         
         
         <description><![CDATA[
-            <p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p> 
+            <img width="128" alt="xcode-s-128x128_2x" src="https://k51qzi5uqu5dkymx3ipnb91r0m8hnjzih530mffz139egcnyl71h16cefhr8c6.eth.sucks/F2E0C31C-2DAE-4453-A3D9-CE76022EF0A5/xcode-s-128x128_2x.png" /> 
+<p>因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。</p> 
 <p>而 GitHub 承擔了絕大部分的 swift package 的分發。</p> 
 <p>但 Xcode 的網路請求並不會透過系統 proxy，這時看著 fetching... 就會幹著急。</p> 
 <p>Xcode 雖然不經過系統的 proxy，但是 Terminal 可以呀！</p> 

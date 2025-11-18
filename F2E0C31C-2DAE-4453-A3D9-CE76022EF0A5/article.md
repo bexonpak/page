@@ -1,5 +1,7 @@
 Xcode Swift Package Manager 無法下載 GitHub 包問題
 
+<img width="128" alt="xcode-s-128x128_2x" src="xcode-s-128x128_2x.png">
+
 因為中國大陸網路複雜度的原因，GitHub 在不同時間，不同寬頻運營商，不同省份的訪問速度和可到情況都不同。
 
 而 GitHub 承擔了絕大部分的 swift package 的分發。
